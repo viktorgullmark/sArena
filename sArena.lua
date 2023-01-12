@@ -785,7 +785,7 @@ function sArenaMixin:Test()
         frame.PowerBar:SetMinMaxValues(0, 100)
         frame.PowerBar:SetValue(100)
 
-        frame.ClassIcon:SetTexture(classIcons["PRIEST"])
+        frame.ClassIcon:SetTexture(classIcons["MAGE"])
 
         frame.SpecIcon:Show()
 

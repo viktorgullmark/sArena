@@ -247,7 +247,7 @@ function layout:UpdateOrientation(frame)
 end
 
 function layout:UpdateTextures(frame)
-    local texture = "Interface\\AddOns\\sArena Updated\\images\\BantoBar";
+    local texture = "Interface\\AddOns\\sArena (DF)\\images\\BantoBar";
 
     local typeInfoTexture = "Interface\\TargetingFrame\\UI-StatusBar";
 
