@@ -758,10 +758,10 @@ function sArenaFrameMixin:SetStatusText(unit)
 
     if (db.profile.statusText.usePercentage) then
         self.HealthText:SetText(ceil((hp / hpMax) * 100) .. "%")
-        self.PowerText:SetText("")
+        self.PowerText:SetText(ceil((pp / ppMax) * 100) .. "%")
     else
         self.HealthText:SetText(AbbreviateLargeNumbers(hp))
-        self.PowerText:SetText("")
+        self.PowerText:SetText(AbbreviateLargeNumbers(pp))
     end
 end
 

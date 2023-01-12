@@ -46,7 +46,6 @@ layout.defaultSettings = {
     height = 47,
     powerBarHeight = 9,
     mirrored = true,
-    classicBars = false,
 }
 
 local function getSetting(info)
@@ -111,23 +110,6 @@ local function setupOptionsTable(self)
         step = 1,
         get = getSetting,
         set = setSetting,
-    }
-
-    layout.optionsTable.arenaFrames.args.other = {
-        order = 3,
-        name = "Other",
-        type = "group",
-        inline = true,
-        args = {
-            classicBars = {
-                order = 1,
-                name = "Classic Bar Textures",
-                type = "toggle",
-                width = "full",
-                get = getSetting,
-                set = setSetting,
-            }
-        }
     }
 end
 
@@ -260,13 +242,8 @@ function layout:UpdateTextures(frame)
     frame.HealthBar:SetStatusBarTexture(texture)
     frame.PowerBar:SetStatusBarTexture(texture)
 
-    if self.db.classicBars then
-        hpUnderlay:SetColorTexture(0, 0, 0, 0.5)
-        ppUnderlay:SetColorTexture(0, 0, 0, 0.5)
-    else
-        hpUnderlay:SetTexture(texture)
-        ppUnderlay:SetTexture(texture)
-    end
+    hpUnderlay:SetTexture(texture)
+    ppUnderlay:SetTexture(texture)
 end
 
 sArenaMixin.layouts[layoutName] = layout
