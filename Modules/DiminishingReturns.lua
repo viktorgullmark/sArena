@@ -125,6 +125,7 @@ drList = {
     [226943]  = "Disorient",       -- Mind Bomb
     [2094]    = "Disorient",       -- Blind
     [118699]  = "Disorient",       -- Fear
+    [360806]  = "Disorient",       -- Sleep Walk
     [6358]    = "Disorient",       -- Seduction (Succubus)
     [115268]  = "Disorient",       -- Mesmerize (Shivarra)
     [5246]    = "Disorient",       -- Intimidating Shout
